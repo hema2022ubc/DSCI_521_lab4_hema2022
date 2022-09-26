@@ -1,41 +1,47 @@
 ---
 title: "Lab 4 - Introduction to RStudio and R Markdown. Presentations"
+author: "He Ma"
+date: "September 24, 2022 "
 output:
   html_document:
-    toc: true
+    toc: yes
+    df_print: paged
+  github_document:
+    toc: yes
+editor_options:
+  markdown:
+    wrap: 72
 ---
 
 <!-- This is a comment in R Markdown (and regular markdown, such as in Jupyter)-->
+
 <!-- The dashes below are not part of the YAML block above, -->
+
 <!-- they insert a horizontal line after the ToC -->
 
---- 
+------------------------------------------------------------------------
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-In Lab 4,
-you will learn how to use,
-edit and create a R Markdown document (like this one) using RStudio.
-You should follow the instructions in this document to complete the assignment.
-Knit this document to view the nicely rendered HTML,
-which can make it easier to read the questions.
+In Lab 4, you will learn how to use, edit and create a R Markdown
+document (like this one) using RStudio. You should follow the
+instructions in this document to complete the assignment. Knit this
+document to view the nicely rendered HTML, which can make it easier to
+read the questions.
 
-If you need help as you use R Markdown in this lab and others in the future, consult the following resources:
+If you need help as you use R Markdown in this lab and others in the
+future, consult the following resources:
 
-- [Cheat sheet](https://rmarkdown.rstudio.com/lesson-15.html) 
-- [Home page with guides](https://rmarkdown.rstudio.com/docs/)
-- [Reference book](https://bookdown.org/yihui/rmarkdown/)
+-   [Cheat sheet](https://rmarkdown.rstudio.com/lesson-15.html)
+-   [Home page with guides](https://rmarkdown.rstudio.com/docs/)
+-   [Reference book](https://bookdown.org/yihui/rmarkdown/)
 
-The below is a code chunk, 
-but instead of using the `r` engine
-we're creating and alert block
-that will make the question show up with a blue background 
-in the HTML output.
-Unfortunately,
-this creates and error when exporting to PDF,
-so it can only be used for HTML.
+The below is a code chunk, but instead of using the `r` engine we're
+creating and alert block that will make the question show up with a blue
+background in the HTML output. Unfortunately, this creates and error
+when exporting to PDF, so it can only be used for HTML.
 
 ```{block, type="alert alert-info"}
 ## Submission Instructions
@@ -57,28 +63,24 @@ You receive mark for submitting your lab correctly, please follow these instruct
 - Include a clickable link to your GitHub repo for the lab just below this cell (it should look something like this https://github.ubc.ca/MDS-2022-23/DSCI_521_labX_yourcwl.
 ```
 
-YOUR LAB GITHUB REPO LINK GOES HERE
+YOUR LAB GITHUB REPO LINK GOES HERE:
 
+<https://github.ubc.ca/MDS-2022-23/DSCI_521_lab4_hema2022>
 
 ## Editing R Markdown documents
 
-This document is called an R Markdown document.
-It is a literate code document,
-similar to Jupyter notebooks where you can write code and view its outputs.
-To start,
-let's set our working directory
-by creating a new R Project for lab 4.
+This document is called an R Markdown document. It is a literate code
+document, similar to Jupyter notebooks where you can write code and view
+its outputs. To start, let's set our working directory by creating a new
+R Project for lab 4.
 
 ### Text and rendering R Markdown documents
 
-In a R Markdown document any line of text not in a code chunk
-(like this line of text)
-will be formatted using Markdown.
-Similar to JupyterLab,
-you can also use HTML and LaTeX here to do more advanced formatting.
-To run a code chunk,
-you can press the green play button
-in the top right corner of the chunk.
+In a R Markdown document any line of text not in a code chunk (like this
+line of text) will be formatted using Markdown. Similar to JupyterLab,
+you can also use HTML and LaTeX here to do more advanced formatting. To
+run a code chunk, you can press the green play button in the top right
+corner of the chunk.
 
 ```{block, type="alert alert-info"}
 #### Question 1
@@ -89,7 +91,8 @@ To render the HTML files we are going to create, the first step is to activate G
 
 ```
 
-YOUR ANSWER GOES HERE
+YOUR ANSWER GOES HERE:
+**https://hema2022ubc.github.io/DSCI_521_lab4_hema2022/**
 
 ```{block, type="alert alert-info"}
 #### Question 2
@@ -102,6 +105,12 @@ Ensure that you can render/knit the document after you add that chunk.
 ```
 
 YOUR ANSWER GOES HERE
+
+```{r}
+print('This is a test code chunk.')
+c <- 1 + 1
+print(c)
+```
 
 ```{block, type="alert alert-info"}
 #### Question 3
@@ -116,6 +125,10 @@ after you make this change to ensure everything is still working.
 
 YOUR ANSWER GOES HERE
 
+```{r Introduction_to_R_markdown}
+#### This is lab is an introduction to R markdown.
+```
+
 ```{block, type="alert alert-info"}
 #### Question 4
 rubric={mechanics:1,reasoning:1}
@@ -124,17 +137,40 @@ Create a new code chunk that uses a code chunk option.
 Write out in your own words what the code chunk option is doing.
 ```
 
-YOUR ANSWER GOES HERE
+I create a new code chunk named for_loop, and use chunk option 'echo':
+'echo = TURE' is to let knitr display the code in the code chunk before
+the final result , if use 'echo = false', knitr will not display the
+code in the code chunk above it\'s results in the final document.
 
+```{r}{r for_loop , echo = TRUE}
 
-####  Multiple code chunk options
+a  <- c(1, 2, 3, 4)
+b <-  0
+for (i in a){
+  b = i + b
+}
 
-To have multiple code chunk options you separate them by a comma.
-For example,
-if in addition to suppressing warnings,
-we want to run the code but not output the results,
-then we can add the `include = FALSE` argument to the code chunk
-after the `warning = FALSE` option.
+print(b)
+
+```
+
+```{r for_loop , echo = FALSE}
+
+a  <- c(1, 2, 3, 4)
+b <-  0
+for (i in a){
+  b = i + b
+}
+
+print(b)
+```
+
+#### Multiple code chunk options
+
+To have multiple code chunk options you separate them by a comma. For
+example, if in addition to suppressing warnings, we want to run the code
+but not output the results, then we can add the `include = FALSE`
+argument to the code chunk after the `warning = FALSE` option.
 
 ```{block, type="alert alert-info"}
 #### Question 5
@@ -145,47 +181,60 @@ At least one must be different to the ones mentioned above.
 Write in your own words what each code chunk option is doing.
 ```
 
-YOUR ANSWER GOES HERE
+I use two options in the code chunk: error and results. 'error = TRUE'
+can show errors without stopping R, and 'error = FALSE ' will lead R to
+stop on error when running the code chunks; results = 'hide' is to let
+knitr hide the code\'s results in the final document. results= 'markup'
+will let knitr to display the code's result in the final document.
 
+```{r Multiple_code_chunk_options, error = TRUE, results = 'hide'}
+
+a  <- c(1, 2, 3, 4)
+b <-  0
+for (i in a){
+  b = i + b
+}
+
+print(b)
+print(e)
+
+```
 
 ### 1.5. YAML Header and document output options
 
 R Markdown files contains three types of content:
 
-1. Plain text mixed with simple Markdown formatting.
-2. Code chunks surrounded by <code>```</code>.
-3. An (optional) YAML header surrounded by `---`.
+1.  Plain text mixed with simple Markdown formatting.
+2.  Code chunks surrounded by <code>\`\`\`</code>.
+3.  An (optional) YAML header surrounded by `---`.
 
-You have been introduced the first two types of content,
-but not the third
-(although you probably saw it at the top of this document).
-The (optional) YAML header,
-which is located at the very top of R Markdown files sets some general global parameters,
-including:
+You have been introduced the first two types of content, but not the
+third (although you probably saw it at the top of this document). The
+(optional) YAML header, which is located at the very top of R Markdown
+files sets some general global parameters, including:
 
-- title
-- author
-- output
-- etc
+-   title
+-   author
+-   output
+-   etc
 
 **Example YAML Header**
 
-```
----
-title: "Reproducible Data Science Report"
-author: "Florencia D'Andrea"
-date: "September 4, 2022"
-output: html_document
----
-```
+    ---
+    title: "Reproducible Data Science Report"
+    author: "Florencia D'Andrea"
+    date: "September 4, 2022"
+    output: html_document
+    ---
 
-Most important from a workflow perspective is **output**. Possible output options include:
+Most important from a workflow perspective is **output**. Possible
+output options include:
 
-- `output: html_document`
-- `output: md_document`
-- `output: pdf_document`
-- `output: word_document`
-- `output: xaringan::moon_reader` (xaringan presentation - html)
+-   `output: html_document`
+-   `output: md_document`
+-   `output: pdf_document`
+-   `output: word_document`
+-   `output: xaringan::moon_reader` (xaringan presentation - html)
 
 ```{block, type="alert alert-info"}
 #### Question 6
@@ -198,26 +247,34 @@ Include what you added below here as well as a fenced Markdown code block.
 
 YOUR ANSWER GOES HERE
 
+\-\--
 
+title: "Lab 4 - Introduction to RStudio and R Markdown. Presentations"
+
+author: "He Ma"
+
+date: "September 24, 2022 "
+
+output: html_document
+
+\-\--
 
 ### Creating R Markdown documents
 
-You can use the "File" menu inside RStudio to create new R Markdown documents by selecting:
-**File > New File > R Markdown**
-This will bring you to another menu where you can choose the type of output
-(don't be afraid to pick something,
-you can always change the `output` type once you have the `.Rmd` file).
+You can use the "File" menu inside RStudio to create new R Markdown
+documents by selecting: **File \> New File \> R Markdown** This will
+bring you to another menu where you can choose the type of output (don't
+be afraid to pick something, you can always change the `output` type
+once you have the `.Rmd` file).
 
-To create a written report,
-we generally recommend using the default `output: html_document`
-as it is easier to read than PDF
-(note - LaTeX does not render nicely in such documents sadly,
-so if you are using a lot of LaTeX then you may want to choose `output: pdf_document`).
-If you want to create an `.md` file to publish on GitHub,
-it is recommend to instead use `output: github_document`.
-To get this from the menu above
-you need to navigate to the "From Template" option on the left panel
-and then select "GitHub Document (Markdown)".
+To create a written report, we generally recommend using the default
+`output: html_document` as it is easier to read than PDF (note - LaTeX
+does not render nicely in such documents sadly, so if you are using a
+lot of LaTeX then you may want to choose `output: pdf_document`). If you
+want to create an `.md` file to publish on GitHub, it is recommend to
+instead use `output: github_document`. To get this from the menu above
+you need to navigate to the "From Template" option on the left panel and
+then select "GitHub Document (Markdown)".
 
 ```{block, type="alert alert-info"}
 #### Question 7
@@ -315,7 +372,3 @@ Include advantages and disadvantages for each.
 ```
 
 YOUR ANSWER GOES HERE
-
-
-
-
