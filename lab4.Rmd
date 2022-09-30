@@ -1,7 +1,7 @@
 ---
 title: "Lab 4 - Introduction to RStudio and R Markdown. Presentations"
 author: "He Ma"
-date: "September 24, 2022 "
+date: "September 24, 2022"
 output:
   html_document:
     toc: yes
@@ -92,7 +92,7 @@ To render the HTML files we are going to create, the first step is to activate G
 ```
 
 YOUR ANSWER GOES HERE:
-**https://hema2022ubc.github.io/DSCI_521_lab4_hema2022/**
+[**https://hema2022ubc.github.io/DSCI_521_lab4_hema2022/**](https://hema2022ubc.github.io/DSCI_521_lab4_hema2022/){.uri}
 
 ```{block, type="alert alert-info"}
 #### Question 2
@@ -126,7 +126,7 @@ after you make this change to ensure everything is still working.
 YOUR ANSWER GOES HERE
 
 ```{r Introduction_to_R_markdown}
-#### This is lab is an introduction to R markdown.
+#### This lab is an introduction to R markdown.
 ```
 
 ```{block, type="alert alert-info"}
@@ -137,12 +137,12 @@ Create a new code chunk that uses a code chunk option.
 Write out in your own words what the code chunk option is doing.
 ```
 
-I create a new code chunk named for_loop, and use chunk option 'echo':
+I create a new code chunk named 'for_loop', and use chunk option 'echo':
 'echo = TURE' is to let knitr display the code in the code chunk before
 the final result , if use 'echo = false', knitr will not display the
-code in the code chunk above it\'s results in the final document.
+code in the code chunk above it's results in the final document.
 
-```{r}{r for_loop , echo = TRUE}
+```{r for_loop , echo = TRUE}
 
 a  <- c(1, 2, 3, 4)
 b <-  0
@@ -182,9 +182,9 @@ Write in your own words what each code chunk option is doing.
 ```
 
 I use two options in the code chunk: error and results. 'error = TRUE'
-can show errors without stopping R, and 'error = FALSE ' will lead R to
+can show errors without stopping R, and 'error = FALSE' will lead R to
 stop on error when running the code chunks; results = 'hide' is to let
-knitr hide the code\'s results in the final document. results= 'markup'
+knitr hide the code's results in the final document. results= 'markup'
 will let knitr to display the code's result in the final document.
 
 ```{r Multiple_code_chunk_options, error = TRUE, results = 'hide'}
@@ -253,7 +253,7 @@ title: "Lab 4 - Introduction to RStudio and R Markdown. Presentations"
 
 author: "He Ma"
 
-date: "September 24, 2022 "
+date: "September 24, 2022"
 
 output: html_document
 
@@ -296,7 +296,9 @@ to the GitHub repository for this lab
 and paste the two links below this question.
 ```
 
-YOUR ANSWER GOES HERE
+YOUR ANSWER GOES HERE:
+
+1.  
 
 ```{block, type="alert alert-info"}
 #### Question 8
