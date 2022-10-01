@@ -1,10 +1,9 @@
 ---
-title: "Introdunction to Graphene"
+title: "Intro to graphene"
 author: "He Ma"
 date: "2022-09-30"
 output:
-  xaringan::moon_reader:
-
+    xaringan::moon_reader:
   nature:
     autoplay: 30000
 ---
@@ -31,7 +30,7 @@ output:
 **Graphite**
 
 ```{r echo = FALSE, out.width = '60%'}
-knitr::include_graphics("imgs/graphite.png")
+knitr::include_graphics("imgs/graphite.jpg")
 ```
 ]
 
@@ -39,7 +38,7 @@ knitr::include_graphics("imgs/graphite.png")
 **Graphene**
 
 ```{r echo = FALSE, out.width = '140%'}
-knitr::include_graphics("imgs/menu0.png")
+knitr::include_graphics("imgs/graphene1.jpg")
 ```
 
 ]
@@ -54,7 +53,7 @@ knitr::include_graphics("imgs/menu0.png")
 
 
 ```{r echo = FALSE, out.width = '100%'}
-knitr::include_graphics("imgs/graphene2.png")
+knitr::include_graphics("imgs/graphene2.jpg")
 ```
 ]
 
@@ -62,7 +61,7 @@ knitr::include_graphics("imgs/graphene2.png")
 
 
 ```{r echo = FALSE,out.width = '60%'}
-knitr::include_graphics("imgs/spm.png")
+knitr::include_graphics("imgs/spm.jpg")
 ```
 
 ]
