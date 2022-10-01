@@ -1,6 +1,6 @@
 ---
 title: "Introduction to R language for beginners"
-output: html_document
+output: github_document
 author: 'He Ma'
 date: "2022-09-27"
 ---
@@ -15,9 +15,10 @@ library(ggthemes)
 options(repr.matrix.max.rows = 10)
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
 ## Function in R
 
-This is an exercise for function in R. You can write your own functions in order to make repetitive operations using a single command. Starting by defining the function “my_function” and the input parameter(s) that the user will feed to the function. Then define the operation that you desire to program in the body of the function within curly braces ({}). Finally, assign the result of the function in the return statement.
+This is an exercise for function in R. You can write your own functions in order to make repetitive operations using a single command. Starting by defining the function "my_function" and the input parameter(s) that the user will feed to the function. Then define the operation that you desire to program in the body of the function within curly braces ({}). Finally, assign the result of the function in the return statement.
 
 ```{r}
 economist_scatter <- function(data, x, y, colour_by){
@@ -41,7 +42,7 @@ economist_scatter(penguins, body_mass_g, flipper_length_mm, sex)
 
 ## Tidy data
 
-This is an example for `fliter` and `select`. The tidyverse is an opinionated collection of R packages designed for data science. All packages share an underlying design philosophy, grammar, and data structures. Filtering and selectiong data is one of the very basic operation when you work with data. 
+This is an example for `fliter` and `select`. The tidyverse is an opinionated collection of R packages designed for data science. All packages share an underlying design philosophy, grammar, and data structures. Filtering and selectiong data is one of the very basic operation when you work with data.
 
 ```{r pressure, echo=TRUE}
 dataset <-  tribble(
@@ -59,4 +60,3 @@ dataset |>
   select(name:gender)  
   
 ```
-
