@@ -303,6 +303,9 @@ YOUR ANSWER GOES HERE:
 1.  HTML file:
     <https://github.ubc.ca/MDS-2022-23/DSCI_521_lab4_hema2022/blob/master/Lab4_question_7_html_document.html>
 
+    or this repo can view the rendered HTML file
+    <https://hema2022ubc.github.io/DSCI_521_lab4_hema2022/Lab4_question_7_html_document.html>
+
 2.  PDF file :
     <https://github.ubc.ca/MDS-2022-23/DSCI_521_lab4_hema2022/blob/master/Lab4_question_7_pdf_document.pdf>
 
@@ -323,7 +326,11 @@ rubric={mechanics:6}
    Paste a link to these files as your answer below.
 ```
 
-YOUR ANSWER GOES HERE
+<https://github.ubc.ca/MDS-2022-23/DSCI_521_lab4_hema2022/blob/master/Introduction-to-R-language-for-beginners.html>
+
+or this repo can view the rendered HTML file
+
+<https://hema2022ubc.github.io/DSCI_521_lab4_hema2022/Introduction-to-R-language-for-beginners.html>
 
 ```{block, type="alert alert-info"}
 #### Question 9 (Optional)
@@ -338,7 +345,10 @@ rubric={mechanics:1,reasoning:1}
 ```
 
 github_document:
-<https://github.ubc.ca/MDS-2022-23/DSCI_521_lab4_hema2022/blob/master/Lab4_question_7_github_document.md>
+<https://github.ubc.ca/MDS-2022-23/DSCI_521_lab4_hema2022/blob/master/Introduction-to-R-language-for-beginners.md>
+
+Format converting from R Markdown to GitHub Flavored Markdown, and it is
+rendered as HTML in the github.
 
 ```{block, type="alert alert-info"}
 #### Question 10
@@ -380,4 +390,25 @@ for presentations and reports.
 Include advantages and disadvantages for each.
 ```
 
-YOUR ANSWER GOES HERE
+Non-reproducible tools and reproducible tools and both deal with
+figures, data and text, giving the content orders ,formats and display a
+presetation.
+
+For non-reproducible tools such as Word and Powerpoint, the interface is
+easer for people. The graphical interface can directly display what you
+are doing now. People can finish the work without coding or knowing any
+syntax. Reproducible tools such as R Markdown and Jupyter work with
+plain-text documents, so the files will not be that intuitive. And
+people need to know formatting syntax to code in these tools.
+
+Reproducible tools may cost more time for working at first time, but
+when you finish the format coding, you can concentrate on the content of
+the presentation and don't need to worrier about the format even there
+are some date changed. But for non reproducible tools, once you change
+something in the presentation, you have to adjust the format again.
+Creating a one-off presentation that will never re-use by
+non-reproducible tools may be more convenient. But if it is a
+presentation that will re-use for many times, or the main body and
+format of the presentation are similar but the data and corresponding
+figures various, using reproducible tools can save time, because you do
+not need to care about the format, you can just replace the data.
