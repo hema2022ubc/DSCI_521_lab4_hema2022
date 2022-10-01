@@ -31,7 +31,7 @@ output:
 **Graphite**
 
 ```{r echo = FALSE, out.width = '60%'}
-knitr::include_graphics("imgs/graphite.jpg")
+knitr::include_graphics("imgs/graphite.png")
 ```
 ]
 
@@ -39,7 +39,7 @@ knitr::include_graphics("imgs/graphite.jpg")
 **Graphene**
 
 ```{r echo = FALSE, out.width = '140%'}
-knitr::include_graphics("imgs/graphene1.jpg")
+knitr::include_graphics("imgs/graphene1.png")
 ```
 
 ]
@@ -54,7 +54,7 @@ knitr::include_graphics("imgs/graphene1.jpg")
 
 
 ```{r echo = FALSE, out.width = '100%'}
-knitr::include_graphics("imgs/graphene2.jpg")
+knitr::include_graphics("imgs/graphene2.png")
 ```
 ]
 
@@ -62,7 +62,7 @@ knitr::include_graphics("imgs/graphene2.jpg")
 
 
 ```{r echo = FALSE,out.width = '60%'}
-knitr::include_graphics("imgs/spm.jpg")
+knitr::include_graphics("imgs/spm.png")
 ```
 
 ]
