@@ -8,6 +8,27 @@ output:
   nature:
     autoplay: 30000
 ---
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#1381B0",
+  secondary_color = "#FF961C",
+  inverse_header_color = "#FFFFFF"
+)
+```
 
 #Graphene Topics
 
@@ -23,25 +44,22 @@ output:
 ---
 
 # What is graphene?
-
-
-
-
 .pull-left[
 **Graphite**
 
-```{r echo = FALSE, out.width = '60%'}
-knitr::include_graphics("imgs/graphite.png")
+```{r echo = FALSE, out.width = '50%'}
+knitr::include_graphics("imgs/Graphite.png")
 ```
 ]
+
+
 
 .pull-right[
 **Graphene**
 
 ```{r echo = FALSE, out.width = '140%'}
-knitr::include_graphics("imgs/menu0.png")
+knitr::include_graphics("imgs/Graphene1.png")
 ```
-
 ]
 
 ###Graphene is a carbon allotrope consisting of a single layer of atoms.
@@ -54,7 +72,7 @@ knitr::include_graphics("imgs/menu0.png")
 
 
 ```{r echo = FALSE, out.width = '100%'}
-knitr::include_graphics("imgs/graphene2.png")
+knitr::include_graphics("imgs/Graphene2.png")
 ```
 ]
 
@@ -62,7 +80,7 @@ knitr::include_graphics("imgs/graphene2.png")
 
 
 ```{r echo = FALSE,out.width = '60%'}
-knitr::include_graphics("imgs/spm.png")
+knitr::include_graphics("imgs/SPM.png")
 ```
 
 ]
