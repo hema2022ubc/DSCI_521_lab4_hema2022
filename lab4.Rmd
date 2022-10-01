@@ -365,7 +365,7 @@ rubric={mechanics:6}
 5. Activate GitHub pages and paste the link below.
 ```
 
-YOUR ANSWER GOES HERE
+<https://hema2022ubc.github.io/DSCI_521_lab4_hema2022/Lab4_question_10_slide_document.html>
 
 ```{block, type="alert alert-info"}
 #### (Challenging) Question 11

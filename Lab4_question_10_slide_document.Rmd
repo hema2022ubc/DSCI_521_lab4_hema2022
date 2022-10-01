@@ -6,7 +6,11 @@ output:
   xaringan::moon_reader:
 
   nature:
-    autoplay: 30000
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
 ---
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
@@ -42,7 +46,7 @@ style_duo_accent(
 
 
 ---
-
+class: inverse center middle
 # What is graphene?
 .pull-left[
 **Graphite**
@@ -62,7 +66,7 @@ knitr::include_graphics("imgs/Graphene1.png")
 ```
 ]
 
-###Graphene is a carbon allotrope consisting of a single layer of atoms.
+_Graphene_ is a carbon allotrope consisting of a single layer of atoms.
 ---
 #The structure of graphene
 
@@ -87,8 +91,6 @@ knitr::include_graphics("imgs/SPM.png")
 ####Graphene is a single layer of two-dimensional atomic crystals with an orthohexagonal lattice structure. The length of the C–C bond is around 0.142 nm, and the thickness of the layer is 0.35 nm.
 ---
 #The electronic property of graphene
-
-
 
 ###The dispersion relation of graphene
 
