@@ -14,16 +14,28 @@ includes both content as well as the output of any embedded R code
 chunks within the document. You can embed an R code chunk like this:
 
 ``` r
-summary(cars)
+economist_scatter <- function(data, x, y, colour_by){
+   
+    { if (!is.data.frame(data)){
+      stop("Can only compute dataframe.")
+    }
+ }     
+
+    
+
+library(ggthemes)
+ggplot(data, aes(x = {{x}}, y = {{y}})) +
+    geom_point(alpha = 0.5, size = 2, aes(colour = {{colour_by}})) +
+    theme_economist()
+   
+}
+
+economist_scatter(penguins, body_mass_g, flipper_length_mm, sex)
 ```
 
-    ##      speed           dist       
-    ##  Min.   : 4.0   Min.   :  2.00  
-    ##  1st Qu.:12.0   1st Qu.: 26.00  
-    ##  Median :15.0   Median : 36.00  
-    ##  Mean   :15.4   Mean   : 42.98  
-    ##  3rd Qu.:19.0   3rd Qu.: 56.00  
-    ##  Max.   :25.0   Max.   :120.00
+    ## Warning: Removed 2 rows containing missing values (geom_point).
+
+![](Lab4_question_7_github_document_files/figure-gfm/cars-1.png)<!-- -->
 
 ## Including Plots
 
