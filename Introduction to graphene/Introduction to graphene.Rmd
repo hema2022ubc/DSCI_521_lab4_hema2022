@@ -4,10 +4,11 @@ author: "He Ma"
 date: "2022-09-30"
 output:
   xaringan::moon_reader:
-    self_contained: true
+
   nature:
     autoplay: 30000
 ---
+
 #Graphene Topics
 
 
@@ -74,3 +75,8 @@ knitr::include_graphics("imgs/spm.jpg")
 ###The dispersion relation of graphene
 
 $$E(k_x,k_y)=\pm\,\gamma_0\sqrt{1+4\cos^2{\tfrac{1}{2}ak_x}+4\cos{\tfrac{1}{2}ak_x} \cdot \cos{\tfrac{\sqrt{3}}{2}ak_y}}$$
+.center[
+```{r echo = FALSE,out.width = '30%'}
+knitr::include_graphics("imgs/band.png")
+```
+]
