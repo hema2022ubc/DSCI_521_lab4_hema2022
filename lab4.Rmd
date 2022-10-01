@@ -8,6 +8,8 @@ output:
     df_print: paged
   github_document:
     toc: yes
+  pdf_document:
+    toc: yes
 editor_options:
   markdown:
     wrap: 72
@@ -154,7 +156,7 @@ print(b)
 
 ```
 
-```{r for_loop , echo = FALSE}
+```{r for_loop2 , echo = FALSE}
 
 a  <- c(1, 2, 3, 4)
 b <-  0
@@ -298,7 +300,11 @@ and paste the two links below this question.
 
 YOUR ANSWER GOES HERE:
 
-1.  
+1.  HTML file:
+    <https://github.ubc.ca/MDS-2022-23/DSCI_521_lab4_hema2022/blob/master/Lab4_question_7_html_document.html>
+
+2.  PDF file :
+    <https://github.ubc.ca/MDS-2022-23/DSCI_521_lab4_hema2022/blob/master/Lab4_question_7_pdf_document.pdf>
 
 ```{block, type="alert alert-info"}
 #### Question 8
@@ -331,7 +337,8 @@ rubric={mechanics:1,reasoning:1}
    What do you see? How is it rendered?
 ```
 
-YOUR ANSWER GOES HERE
+github_document:
+<https://github.ubc.ca/MDS-2022-23/DSCI_521_lab4_hema2022/blob/master/Lab4_question_7_github_document.md>
 
 ```{block, type="alert alert-info"}
 #### Question 10

@@ -1647,9 +1647,6 @@ Markdown. Presentations</h1>
 <ul>
 <li><a href="#text-and-rendering-r-markdown-documents" id="toc-text-and-rendering-r-markdown-documents">Text and rendering R
 Markdown documents</a></li>
-</ul></li>
-<li><a href="#section" id="toc-section">[1] 10</a>
-<ul>
 <li><a href="#yaml-header-and-document-output-options" id="toc-yaml-header-and-document-output-options">1.5. YAML Header and
 document output options</a></li>
 <li><a href="#creating-r-markdown-documents" id="toc-creating-r-markdown-documents">Creating R Markdown
@@ -1753,7 +1750,7 @@ To render the HTML files we are going to create, the first step is to
 activate GitHub pages.
 </p>
 </div>
-<p>YOUR ANSWER GOES HERE: <strong><a href="https://hema2022ubc.github.io/DSCI_521_lab4_hema2022/" class="uri">https://hema2022ubc.github.io/DSCI_521_lab4_hema2022/</a></strong></p>
+<p>YOUR ANSWER GOES HERE: <a href="https://hema2022ubc.github.io/DSCI_521_lab4_hema2022/" class="uri"><strong>https://hema2022ubc.github.io/DSCI_521_lab4_hema2022/</strong></a></p>
 <div class="alert alert-info">
 <h4 id="question-2">
 Question 2
@@ -1789,7 +1786,7 @@ ensure everything is still working.
 </p>
 </div>
 <p>YOUR ANSWER GOES HERE</p>
-<pre class="r"><code>#### This is lab is an introduction to R markdown.</code></pre>
+<pre class="r"><code>#### This lab is an introduction to R markdown.</code></pre>
 <div class="alert alert-info">
 <h4 id="question-4">
 Question 4
@@ -1802,44 +1799,46 @@ Create a new code chunk that uses a code chunk option. Write out in your
 own words what the code chunk option is doing.
 </p>
 </div>
-<p>I create a new code chunk named for_loop, and use chunk option
+<p>I create a new code chunk named ‘for_loop’, and use chunk option
 ‘echo’: ‘echo = TURE’ is to let knitr display the code in the code chunk
 before the final result , if use ‘echo = false’, knitr will not display
-the code in the code chunk above it&#39;s results in the final document.</p>
-<p>```{r}{r for_loop , echo = TRUE}</p>
-<p>a &lt;- c(1, 2, 3, 4) b &lt;- 0 for (i in a){ b = i + b }</p>
-<p>print(b)</p>
-<pre><code>
-</code></pre>
-</div>
-</div>
-<div id="section" class="section level2">
-<h2>[1] 10</h2>
-<pre><code>
-#### Multiple code chunk options
+the code in the code chunk above it’s results in the final document.</p>
+<pre class="r"><code>a  &lt;- c(1, 2, 3, 4)
+b &lt;-  0
+for (i in a){
+  b = i + b
+}
 
-To have multiple code chunk options you separate them by a comma. For
+print(b)</code></pre>
+<pre><code>## [1] 10</code></pre>
+<pre><code>## [1] 10</code></pre>
+<div id="multiple-code-chunk-options" class="section level4">
+<h4>Multiple code chunk options</h4>
+<p>To have multiple code chunk options you separate them by a comma. For
 example, if in addition to suppressing warnings, we want to run the code
-but not output the results, then we can add the `include = FALSE`
-argument to the code chunk after the `warning = FALSE` option.
-
-&lt;div class=&quot;alert alert-info&quot;&gt;
-&lt;h4 id=&quot;question-5&quot;&gt;Question 5&lt;/h4&gt;
-&lt;p&gt;rubric={mechanics:1,reasoning:1}&lt;/p&gt;
-&lt;p&gt;Create a new code chunk that uses at least two code chunk options. At
+but not output the results, then we can add the
+<code>include = FALSE</code> argument to the code chunk after the
+<code>warning = FALSE</code> option.</p>
+<div class="alert alert-info">
+<h4 id="question-5">
+Question 5
+</h4>
+<p>
+rubric={mechanics:1,reasoning:1}
+</p>
+<p>
+Create a new code chunk that uses at least two code chunk options. At
 least one must be different to the ones mentioned above. Write in your
-own words what each code chunk option is doing.&lt;/p&gt;
-&lt;/div&gt;
-
-I use two options in the code chunk: error and results. &#39;error = TRUE&#39;
-can show errors without stopping R, and &#39;error = FALSE &#39; will lead R to
-stop on error when running the code chunks; results = &#39;hide&#39; is to let
-knitr hide the code\&#39;s results in the final document. results= &#39;markup&#39;
-will let knitr to display the code&#39;s result in the final document.
-
-
-```r
-a  &lt;- c(1, 2, 3, 4)
+own words what each code chunk option is doing.
+</p>
+</div>
+<p>I use two options in the code chunk: error and results. ‘error =
+TRUE’ can show errors without stopping R, and ‘error = FALSE’ will lead
+R to stop on error when running the code chunks; results = ‘hide’ is to
+let knitr hide the code’s results in the final document. results=
+‘markup’ will let knitr to display the code’s result in the final
+document.</p>
+<pre class="r"><code>a  &lt;- c(1, 2, 3, 4)
 b &lt;-  0
 for (i in a){
   b = i + b
@@ -1848,6 +1847,8 @@ for (i in a){
 print(b)
 print(e)</code></pre>
 <pre><code>## Error in print(e): object &#39;e&#39; not found</code></pre>
+</div>
+</div>
 <div id="yaml-header-and-document-output-options" class="section level3">
 <h3>1.5. YAML Header and document output options</h3>
 <p>R Markdown files contains three types of content:</p>
@@ -1898,6 +1899,13 @@ well as a fenced Markdown code block.
 </p>
 </div>
 <p>YOUR ANSWER GOES HERE</p>
+<p>---</p>
+<p>title: “Lab 4 - Introduction to RStudio and R Markdown.
+Presentations”</p>
+<p>author: “He Ma”</p>
+<p>date: “September 24, 2022”</p>
+<p>output: html_document</p>
+<p>---</p>
 </div>
 <div id="creating-r-markdown-documents" class="section level3">
 <h3>Creating R Markdown documents</h3>
@@ -1939,7 +1947,10 @@ different output. Add and commit that rendered both the
 for this lab and paste the two links below this question.
 </p>
 </div>
-<p>YOUR ANSWER GOES HERE</p>
+<p>YOUR ANSWER GOES HERE:</p>
+<ol style="list-style-type: decimal">
+<li></li>
+</ol>
 <div class="alert alert-info">
 <h4 id="question-8">
 Question 8
