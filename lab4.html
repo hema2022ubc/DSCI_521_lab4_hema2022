@@ -11,7 +11,7 @@
 
 <meta name="author" content="He Ma" />
 
-<meta name="date" content="2022-09-24" />
+<meta name="date" content="2022-10-01" />
 
 <title>Lab 4 - Introduction to RStudio and R Markdown. Presentations</title>
 
@@ -1637,7 +1637,7 @@ pre code {
 <h1 class="title toc-ignore">Lab 4 - Introduction to RStudio and R
 Markdown. Presentations</h1>
 <h4 class="author">He Ma</h4>
-<h4 class="date">September 24, 2022</h4>
+<h4 class="date">October 1, 2022</h4>
 
 </div>
 
@@ -1800,9 +1800,10 @@ own words what the code chunk option is doing.
 </p>
 </div>
 <p>I create a new code chunk named ‘for_loop’, and use chunk option
-‘echo’: ‘echo = TURE’ is to let knitr display the code in the code chunk
-before the final result , if use ‘echo = false’, knitr will not display
-the code in the code chunk above it’s results in the final document.</p>
+<code>echo</code>: <code>echo = TURE</code> is to let knitr display the
+code in the code chunk before the final result , if use
+<code>echo = false</code>, knitr will not display the code in the code
+chunk above it’s results in the final document.</p>
 <pre class="r"><code>a  &lt;- c(1, 2, 3, 4)
 b &lt;-  0
 for (i in a){
@@ -1832,12 +1833,13 @@ least one must be different to the ones mentioned above. Write in your
 own words what each code chunk option is doing.
 </p>
 </div>
-<p>I use two options in the code chunk: error and results. ‘error =
-TRUE’ can show errors without stopping R, and ‘error = FALSE’ will lead
-R to stop on error when running the code chunks; results = ‘hide’ is to
-let knitr hide the code’s results in the final document. results=
-‘markup’ will let knitr to display the code’s result in the final
-document.</p>
+<p>I use two options in the code chunk: <code>error</code> and
+<code>results</code>. <code>error = TRUE</code> can show errors without
+stopping R, and <code>error = FALSE</code> will lead R to stop on error
+when running the code chunks; <code>results = &#39;hide&#39;</code> is to let
+knitr hide the code’s results in the final document.
+<code>results = &#39;markup&#39;</code> will let knitr to display the code’s
+result in the final document.</p>
 <pre class="r"><code>a  &lt;- c(1, 2, 3, 4)
 b &lt;-  0
 for (i in a){
@@ -1899,13 +1901,12 @@ well as a fenced Markdown code block.
 </p>
 </div>
 <p>YOUR ANSWER GOES HERE</p>
-<p>---</p>
-<p>title: “Lab 4 - Introduction to RStudio and R Markdown.
-Presentations”</p>
-<p>author: “He Ma”</p>
-<p>date: “September 24, 2022”</p>
-<p>output: html_document</p>
-<p>---</p>
+<pre><code>---
+title: &quot;Lab 4 - Introduction to RStudio and R Markdown. Presentations&quot;
+author: &quot;He Ma&quot;
+date: &quot;October 1, 2022&quot;
+output: html_document
+---</code></pre>
 </div>
 <div id="creating-r-markdown-documents" class="section level3">
 <h3>Creating R Markdown documents</h3>
@@ -1983,7 +1984,7 @@ these files as your answer below.
 </div>
 <p><a href="https://github.ubc.ca/MDS-2022-23/DSCI_521_lab4_hema2022/blob/master/Introduction-to-R-language-for-beginners.html" class="uri">https://github.ubc.ca/MDS-2022-23/DSCI_521_lab4_hema2022/blob/master/Introduction-to-R-language-for-beginners.html</a></p>
 <p>or this repo can view the rendered HTML file</p>
-<p><a href="https://hema2022ubc.github.io/DSCI_521_lab4_hema2022/Lab4_question_7_html_document.html">https://hema2022ubc.github.io/DSCI_521_lab4_hema2022/</a><a href="https://github.ubc.ca/MDS-2022-23/DSCI_521_lab4_hema2022/blob/master/Introduction-to-R-language-for-beginners.html">Introduction-to-R-language-for-beginners.html</a></p>
+<p><a href="https://hema2022ubc.github.io/DSCI_521_lab4_hema2022/Introduction-to-R-language-for-beginners.html" class="uri">https://hema2022ubc.github.io/DSCI_521_lab4_hema2022/Introduction-to-R-language-for-beginners.html</a></p>
 <div class="alert alert-info">
 <h4 id="question-9-optional">
 Question 9 (Optional)
@@ -2003,6 +2004,8 @@ rendered?
 </ol>
 </div>
 <p>github_document: <a href="https://github.ubc.ca/MDS-2022-23/DSCI_521_lab4_hema2022/blob/master/Introduction-to-R-language-for-beginners.md" class="uri">https://github.ubc.ca/MDS-2022-23/DSCI_521_lab4_hema2022/blob/master/Introduction-to-R-language-for-beginners.md</a></p>
+<p>Format converting from R Markdown to GitHub Flavored Markdown, and it
+is rendered as HTML in the github.</p>
 <div class="alert alert-info">
 <h4 id="question-10">
 Question 10

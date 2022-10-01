@@ -1,7 +1,7 @@
 ---
 title: "Lab 4 - Introduction to RStudio and R Markdown. Presentations"
 author: "He Ma"
-date: "September 24, 2022"
+date: "October 1, 2022"
 output:
   html_document:
     toc: yes
@@ -139,9 +139,9 @@ Create a new code chunk that uses a code chunk option.
 Write out in your own words what the code chunk option is doing.
 ```
 
-I create a new code chunk named 'for_loop', and use chunk option 'echo':
-'echo = TURE' is to let knitr display the code in the code chunk before
-the final result , if use 'echo = false', knitr will not display the
+I create a new code chunk named 'for_loop', and use chunk option `echo`:
+`echo = TURE` is to let knitr display the code in the code chunk before
+the final result , if use `echo = false`, knitr will not display the
 code in the code chunk above it's results in the final document.
 
 ```{r for_loop , echo = TRUE}
@@ -183,10 +183,10 @@ At least one must be different to the ones mentioned above.
 Write in your own words what each code chunk option is doing.
 ```
 
-I use two options in the code chunk: error and results. 'error = TRUE'
-can show errors without stopping R, and 'error = FALSE' will lead R to
-stop on error when running the code chunks; results = 'hide' is to let
-knitr hide the code's results in the final document. results= 'markup'
+I use two options in the code chunk: `error` and `results`. `error = TRUE`
+can show errors without stopping R, and `error = FALSE` will lead R to
+stop on error when running the code chunks; `results = 'hide'` is to let
+knitr hide the code's results in the final document. `results = 'markup'`
 will let knitr to display the code's result in the final document.
 
 ```{r Multiple_code_chunk_options, error = TRUE, results = 'hide'}
@@ -248,19 +248,14 @@ Include what you added below here as well as a fenced Markdown code block.
 ```
 
 YOUR ANSWER GOES HERE
-
-\-\--
-
+```
+---
 title: "Lab 4 - Introduction to RStudio and R Markdown. Presentations"
-
 author: "He Ma"
-
-date: "September 24, 2022"
-
+date: "October 1, 2022"
 output: html_document
-
-\-\--
-
+---
+```
 ### Creating R Markdown documents
 
 You can use the "File" menu inside RStudio to create new R Markdown
@@ -326,11 +321,13 @@ rubric={mechanics:6}
    Paste a link to these files as your answer below.
 ```
 
-<https://github.ubc.ca/MDS-2022-23/DSCI_521_lab4_hema2022/blob/master/Introduction-to-R-language-for-beginners.html>
+1. HTML file: <https://github.ubc.ca/MDS-2022-23/DSCI_521_lab4_hema2022/blob/master/Introduction-to-R-language-for-beginners.html>
 
 or this repo can view the rendered HTML file
 
 <https://hema2022ubc.github.io/DSCI_521_lab4_hema2022/Introduction-to-R-language-for-beginners.html>
+
+2.`.Rmd`document: 
 
 ```{block, type="alert alert-info"}
 #### Question 9 (Optional)

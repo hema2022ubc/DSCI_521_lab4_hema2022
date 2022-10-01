@@ -1,6 +1,6 @@
 ---
 title: "Introduction to R language for beginners"
-output: github_document
+output: html_document
 author: 'He Ma'
 date: "2022-09-27"
 ---
